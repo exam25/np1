@@ -10,7 +10,7 @@ void func(int conn) {
         char buf[80];
         int n = 0;
 		
-			read(conn, buf, sizeof(buf));
+	read(conn, buf, sizeof(buf));
         printf("Client: %s\n", buf);
 
         bzero(buf, 80);
